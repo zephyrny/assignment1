@@ -1,0 +1,249 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+footer {
+    margin-top: 1rem;
+    font-style: oblique;
+    text-align: right;
+    font-size: small;
+    font-weight: lighter;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 .5rem;
+}
+
+.nav-list--header {
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.section--page {
+    min-height: 55vh;
+    padding: 2rem 1rem 1rem;
+}
+
+.section--page:nth-of-type(odd) {
+    background: #89BBB1;
+}
+
+.button {
+    color: #BEB6A8;
+    background: #333F54;
+    padding: .5rem 2rem;
+    margin: 2rem auto 0;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #c4c4c4;
+    align-self: flex-start;
+}
+
+.button:hover {
+    text-decoration: underline;
+    box-shadow: 3px 3px 2px #d3d3d3;
+    background: #554836;
+    color: whitesmoke;
+}
+
+.button:active {
+    box-shadow: 1px 1px 1px #c4c4c4;
+}
+
+.main__heading {
+    font-family: serif;
+    font-size: 1.5rem;
+    max-width: 60%;
+}
+
+.hover-word:hover {
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.emphasis {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: serif;
+    line-height: 1.4;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.content {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftfloat {
+    float: left;
+    width: auto;
+    height: 30rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.rightfloat {
+    float: right;
+    width: 26rem;
+    height: auto;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.center__image {
+    vertical-align:middle;
+    width: auto;
+    height:auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bottom__image01 {
+    float: left;
+    width: 26rem;
+    height:auto;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.bottom__image02 {
+    float: right;
+    width: 26rem;
+    height:auto;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+.bottom__image03 {
+    float: left;
+    width: 26rem;
+    height:auto;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+@media (min-width: 420px) {
+    .header {
+        justify-content: flex-start;
+    }
+    .header__summary {
+        text-align: left;
+    }
+    .nav-list--header {
+        justify-content: flex-start;
+    }
+    .emphasis {
+        text-align: left;
+    }
+    body {
+        background-color: whitesmoke;
+        margin: 3rem;
+        padding: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 2;
+    }
+    h1 {
+        font-family: fantasy;
+        text-align: center;
+        font-size: 5rem;
+        color:#273436
+    }
+    .section--page:nth-of-type(odd) {
+        background: #CAE1DA;
+    }
+    .fixed {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 419px) {
+    .leftfloat {
+        float: left;
+        width: 35%;
+        height: auto;
+        margin: 0 1rem 0 0;
+    }
+    
+    .rightfloat {
+        float: right;
+        width: 60%;
+        height: auto;
+        margin: 0 0 0 1rem;
+    }
+    
+    .bottom__image01 {
+        float: left;
+        width: 50%;
+        height:auto;
+        margin: 1rem 1rem 0 0;
+    }
+    
+    .bottom__image02 {
+        float: right;
+        width: 50%;
+        height:auto;
+        margin: 1rem 0 1rem 1rem;
+    }
+    
+    .bottom__image03 {
+        float: left;
+        width: 50%;
+        height:auto;
+        margin: 1rem 1rem 1rem 0;
+        border: 1px solid #201e1e;
+    }
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+        line-height: 1.5;
+        background-color: #CAE6BC;
+    }
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: right;
+        font-size: 2rem;
+        color:#225D5F;
+    }
+    .button {
+        color: #514036;
+        background: #DAB996;
+        padding: .5rem 1rem;
+        margin: 1rem auto 0;
+        box-shadow: 1px 1px 1px #665C3E;
+        border-radius: 25px;
+    }
+    .main__heading {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        max-width: 100%;
+        color: #353D4B;
+        text-shadow: 0.4px 0.4px 0 #EFF8F9;
+        text-decoration: underline;
+    }
+    .citefont {
+        font-family: 'Times New Roman', Times, serif;
+        color: #225D5F;
+        font-weight: lighter;
+    }
+}
